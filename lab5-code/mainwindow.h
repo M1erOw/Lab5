@@ -18,23 +18,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
 private:
     Ui::MainWindow *ui;
     QGridLayout *layout = new QGridLayout;
-    QLabel* choose = new QLabel;
-    QPushButton *SBS_Alg = new QPushButton;
-    QPushButton *DDA = new QPushButton;
-    QPushButton *Bres= new QPushButton;
-    QPushButton *BresCircle = new QPushButton;
-    QPushButton *CastlePitway = new QPushButton;
-    QPushButton *Wu = new QPushButton;
+    QPushButton *Central = new QPushButton;
+    QPushButton *Polygon = new QPushButton;
     CustomWidget *wdgt = new CustomWidget;
 public slots:
-    void showCastlePitway();
-    void showSBS();
-    void showDDA();
-    void showBresCircle();
-    void showBres();
-    void showWu();
+    void showCentral();
+    void showPolygon();
+
 };
 #endif // MAINWINDOW_H

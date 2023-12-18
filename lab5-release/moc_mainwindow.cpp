@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../PKG_lab4_secondTry/mainwindow.h"
+#include "../../PKG_lab5/mainwindow.h"
 #include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
@@ -40,47 +40,31 @@ namespace {
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::stringData(
     "MainWindow",
-    "showCastlePitway",
+    "showCentral",
     "",
-    "showSBS",
-    "showDDA",
-    "showBresCircle",
-    "showBres",
-    "showWu"
+    "showPolygon"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[16];
+    uint offsetsAndSizes[8];
     char stringdata0[11];
-    char stringdata1[17];
+    char stringdata1[12];
     char stringdata2[1];
-    char stringdata3[8];
-    char stringdata4[8];
-    char stringdata5[15];
-    char stringdata6[9];
-    char stringdata7[7];
+    char stringdata3[12];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_stringdata_CLASSMainWindowENDCLASS = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 16),  // "showCastlePitway"
-        QT_MOC_LITERAL(28, 0),  // ""
-        QT_MOC_LITERAL(29, 7),  // "showSBS"
-        QT_MOC_LITERAL(37, 7),  // "showDDA"
-        QT_MOC_LITERAL(45, 14),  // "showBresCircle"
-        QT_MOC_LITERAL(60, 8),  // "showBres"
-        QT_MOC_LITERAL(69, 6)   // "showWu"
+        QT_MOC_LITERAL(11, 11),  // "showCentral"
+        QT_MOC_LITERAL(23, 0),  // ""
+        QT_MOC_LITERAL(24, 11)   // "showPolygon"
     },
     "MainWindow",
-    "showCastlePitway",
+    "showCentral",
     "",
-    "showSBS",
-    "showDDA",
-    "showBresCircle",
-    "showBres",
-    "showWu"
+    "showPolygon"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -92,7 +76,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -100,18 +84,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x0a,    1 /* Public */,
-       3,    0,   51,    2, 0x0a,    2 /* Public */,
-       4,    0,   52,    2, 0x0a,    3 /* Public */,
-       5,    0,   53,    2, 0x0a,    4 /* Public */,
-       6,    0,   54,    2, 0x0a,    5 /* Public */,
-       7,    0,   55,    2, 0x0a,    6 /* Public */,
+       1,    0,   26,    2, 0x0a,    1 /* Public */,
+       3,    0,   27,    2, 0x0a,    2 /* Public */,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -127,17 +103,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSMainWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'showCastlePitway'
+        // method 'showCentral'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'showSBS'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'showDDA'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'showBresCircle'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'showBres'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'showWu'
+        // method 'showPolygon'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -149,12 +117,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->showCastlePitway(); break;
-        case 1: _t->showSBS(); break;
-        case 2: _t->showDDA(); break;
-        case 3: _t->showBresCircle(); break;
-        case 4: _t->showBres(); break;
-        case 5: _t->showWu(); break;
+        case 0: _t->showCentral(); break;
+        case 1: _t->showPolygon(); break;
         default: ;
         }
     }
@@ -180,13 +144,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 2;
     }
     return _id;
 }
