@@ -9,22 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    customwidget.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    customwidget.h \
     mainwindow.h
 
 FORMS += \
     mainwindow.ui
-
-INCLUDEPATH += C:\Users\user\Downloads\opencv\release\install\include
-
-LIBS += C:\Users\user\Downloads\opencv\release\bin\libopencv_core480.dll
-LIBS += C:\Users\user\Downloads\opencv\release\bin\libopencv_highgui480.dll
-LIBS += C:\Users\user\Downloads\opencv\release\bin\libopencv_imgcodecs480.dll
-LIBS += C:\Users\user\Downloads\opencv\release\bin\libopencv_imgproc480.dll
-LIBS += C:\Users\user\Downloads\opencv\release\bin\libopencv_calib3d480.dll
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
